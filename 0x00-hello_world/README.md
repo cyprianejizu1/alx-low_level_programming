@@ -1,5 +1,5 @@
 0x00. C - Hello, World
-Introduction to programming and first set of assignments at Holberton School
+Introduction to programming and first set of assignments at ALX School
 
 What you should learn from this project
 
