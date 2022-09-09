@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
 * main - This will assign random numbers
 *
 * Return: Always 0
 *
 */
-
 int main(void)
 {
 	int n;
