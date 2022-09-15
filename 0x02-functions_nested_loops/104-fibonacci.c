@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 15 . #include <stdio.h>
+=======
+#include <stdio.h>
+>>>>>>> f5c5188274b44ee5c867a490970c18f6b3c1a2e8
 
 /**
  * main - finds and prints the first 98 Fibonacci numbers,
