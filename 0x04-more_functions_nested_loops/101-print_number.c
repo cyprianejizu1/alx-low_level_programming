@@ -8,30 +8,40 @@
 
 void print_number(int n)
 {
-	unsigned int num, num2;
 	int i;
-	int aux = 1;
+	int d = 1;
+	unsigned int x = n;
+	unsigned int y = n;
+	int c = 0;
 
+	if (n == 0)
+	{
+		_putchar('0');
+	}
 	if (n < 0)
 	{
-		n = n * -1;
 		_putchar('-');
+		n = n + 1;
+		n = -n;
+		y = n;
+		x = n;
+		x += 1;
+		y += 1;
 	}
-	num = n;
-	num2 = num;
-	if (num > 9)
-	{
-		while (num >= 10)
-		{
-			aux = aux * 10;
-			num = num / 10;
-		}
-		_putchar((num2 / aux) + '0');
-		aux = aux / 10;
 
-		for (i = aux; i >= 1; i = i / 10)
-			_putchar((num2 / i) % 10 + '0');
+	while (x != 0)
+	{
+		x = x / 10;
+		c++;
 	}
-	else
-		_putchar(num + '0');
+	for (i = 1; i < c; i++)
+	{
+		d *= 10;
+	}
+	for (i = 0; i < c; i++)
+	{
+		_putchar(y / d + '0');
+		y = y % d;
+		d = d / 10;
+	}
 }
