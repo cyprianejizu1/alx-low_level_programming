@@ -8,30 +8,52 @@
 
 void print_number(int n)
 {
-	int d = 1, i = 0, ii = 0;
+	#include "main.h"
+
+/**
+ * print_number - prints an integer
+ * @n: random integer
+ *Return: void
+ **/
+
+void print_number(int n)
+{
+	char ld, cr;
+	int r;
+	int ct = 0;
 
 	if (n < 0)
 	{
-		_putchar('-');
-		n = -n;
+		_putchar ('-');
+		ld = (char)('0' - (n % 10));
+		n = n / -10;
 	}
 
-	while (n / d != 0)
+		else
+		{
+			ld = (char)((n % 10) + '0');
+		n = n / 10;
+	}
+
+	r = 0;
+	while (n > 0)
 	{
-		d *= 10;
-		i++;
+		r = r * 10 + (n % 10);
+		n = n / 10;
+		ct++;
 	}
-	d = d / 10;
 
-	while (ii < i)
+	while (r > 0)
 	{
-		_putchar('0' + n / d);
-		n = n - (n / d) * d;
-		d = d / 10;
-		ii++;
+		cr = (char)((r % 10) + '0');
+		_putchar(cr);
+		r = r / 10;
+		ct--;
 	}
-
-	if (i == 0)
-		_putchar('0' + n);
-
+	while (ct != 0)
+	{
+		_putchar('0');
+			ct--;
+	}
+	_putchar(ld);
 }
