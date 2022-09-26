@@ -13,15 +13,15 @@ in the string s, or NULL if the character is not found
 
 char *_strchr(char *s, char c)
 {
-	while (*s)
+	do
 	{
 		if (*s == c)
 		{
 			return (s);
 		}
 		s++
-	}
-	return (!c ? s : NULL);
+	} while (*s++);
+	return (NULL);
 
 
 }
