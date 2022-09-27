@@ -7,13 +7,12 @@
 *
 *Description: This function locates a character in a string
 *
-*Return: A pointer to the first occurance of the character c in the string s, or NULL if the character is not found
+*Return: A pointer to the first occurance of the character if it's there or NULL otherwise
 */
 
 char *_strchr(char *s, char c)
 {
-	do
-	{
+	do{
 		if (*s == c)
 		{
 			return (s);
