@@ -26,3 +26,5 @@ void print_diagsums(int *a, int size)
 		tr += a[i];
 	}
 
+	printf("%d, %d\n", tl, tr);
+}
