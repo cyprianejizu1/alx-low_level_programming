@@ -10,13 +10,10 @@ void _puts_recursion(char *s)
 {
 	if (*s == '\0')
 	{
-		return;
-		_putchar('\n');
+		_putchar(*s);
+		_putchar(s + 1);
 	}
-	_putchar(*s);
-	_puts_recursion(s + 1);
-	_puts_recursion("");
-	_puts_recursion("First, solve the problem. Then, write the code");
-	_puts_recursion("Talk is cheap. Show me the code");
+	else
+		_putchar('\n')
 
 }
