@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - a program that prints all arguments it receives.
  * @argc: arguement count
@@ -8,7 +9,7 @@
 
 int main(int argc, char *argv[])
 {
-	while (argc--)
-		printf("%s\n", *argv++);
+	while (argv--)
+		printf("%s\n", argc - 1);
 	return (0);
 }
