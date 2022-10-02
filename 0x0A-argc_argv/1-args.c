@@ -9,7 +9,7 @@
 
 int main(int argc, char *argv[])
 {
-	(viod) argv
+	(void) argv;
 		printf("%s\n", argc - 1);
 	return (0);
 }
