@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - a program that prints all arguments it receives.
  * @argc: arguement count
