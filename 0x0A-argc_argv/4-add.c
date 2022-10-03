@@ -22,6 +22,11 @@ int num_checker(char *a)
 		{
 			return (-1);
 		}
+		else
+			num = num * 10 + (a[i] - '0');
+		i++;
 	}
+
+	return (num);
 
 }
