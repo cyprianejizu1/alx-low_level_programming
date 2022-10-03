@@ -19,8 +19,8 @@ int main(int argc, char *argv[])
 	}
 
 /* atoi helpes convert a string to an integer */
-	a = atoi(agrv[1]);
-	b = atoi(agrv[2]);
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
 	result = a * b;
 	printf("%d\n", result);
 	
