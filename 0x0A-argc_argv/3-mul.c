@@ -4,7 +4,7 @@
 /**
  * main - multiply two number
  * @argc: arguement count
- * @argc: array of pointers to arguement string
+ * @argv: array of pointers to arguement string
  * Return: result of multipilication or 1
  **/
 
