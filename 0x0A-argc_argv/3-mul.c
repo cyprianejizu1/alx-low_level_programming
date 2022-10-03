@@ -8,7 +8,7 @@
  * Return: result of multipilication or 1
  **/
 
-main(int argc, char *argv[])
+int 2main(int argc, char *argv[])
 {
 	int a, b, result;
 
