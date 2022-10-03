@@ -10,6 +10,21 @@
 
 main(int argc, char *argv[])
 {
+	int a, b, result;
+
+	if (argc <= 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+
+/* atoi helpes convert a string to an integer */
+	a = atoi(agrv[1]);
+	b = atoi(agrv[2]);
+	result = a * b;
+	printf("%d\n", result);
+	
+	return (0);
 
 
 }
