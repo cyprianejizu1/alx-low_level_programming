@@ -22,6 +22,12 @@ char *_strdup(char *str)
 
 	if (depulicat == NULL)
 		return (NULL);
+	for (index = 0; index < size; index++)
+		depulicate[index] = str[index];
+
+	depulicate[size] = '\0';
+
+	return (depulicat);
 
 
 
