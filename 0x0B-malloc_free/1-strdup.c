@@ -20,16 +20,12 @@ char *_strdup(char *str)
 
 	depulicate = malloc(sizeof(char) * (size + 1));
 
-	if (depulicat == NULL)
+	if (depulicate == NULL)
 		return (NULL);
 	for (index = 0; index < size; index++)
 		depulicate[index] = str[index];
 
 	depulicate[size] = '\0';
 
-	return (depulicat);
-
-
-
-
+	return (depulicate);
 }
