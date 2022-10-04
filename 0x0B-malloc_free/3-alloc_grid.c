@@ -29,7 +29,7 @@ int **alloc_grid(int width, int height)
 		if (twodimensional[hgt_index] == NULL)
 		{
 			for (; hgt_index >= 0; hgt_index--)
-				free(twodimensional[hgt_index);
+				free(twodimensional[hgt_index]);
 
 			free(twodimensional);
 			return (NULL);
@@ -44,4 +44,3 @@ int **alloc_grid(int width, int height)
 
 	return (twodimensional);
 }
-
