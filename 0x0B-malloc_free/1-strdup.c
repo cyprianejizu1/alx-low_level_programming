@@ -18,6 +18,11 @@ char *_strdup(char *str)
 	for (index = 0; str[index] != '\0'; index++)
 		size++;
 
+	depulicate = malloc(sizeof(char) * (size + 1));
+
+	if (depulicat == NULL)
+		return (NULL);
+
 
 
 
