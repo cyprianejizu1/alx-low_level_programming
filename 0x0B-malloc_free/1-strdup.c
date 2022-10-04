@@ -9,6 +9,14 @@
 
 char *_strdup(char *str)
 {
+	char *depulicate;
+	unsigned int size = 0, index;
+
+	if (str == NULL)
+		return (NULL);
+
+	for (index = 0; str[index] != '\0'; index++)
+		size++;
 
 
 
