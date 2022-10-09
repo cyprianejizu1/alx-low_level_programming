@@ -66,7 +66,7 @@ int main(int argc, char *argv[])
 		puts("Error");
 	exit(98);
 	a1 = _strlen(argv[1]), a2 = _strlen(argv[2]);
-	length = a1 + a2
+	length = a1 + a2;
 	next = calloc(length, sizeof(int *));
 	if (next == NULL)
 		puts("Error");
@@ -82,7 +82,7 @@ int main(int argc, char *argv[])
 			if (next[(index + digit) + 1] > 9)
 			{
 				next[index + digit] += next[(index + digit) + 1] / 10;
-				next[(index + digit) + 1] = next[(index + digit) + 1 % 10;
+				next[(index + digit) + 1] = next[(index + digit) + 1] % 10;
 			}
 			next[(index + digit) + 1] += c;
 		}
