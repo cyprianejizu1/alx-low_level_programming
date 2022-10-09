@@ -26,7 +26,7 @@ int _isNum(char *num)
  * Return: s (string modify)
  **/
 
-char *_memset(char *s, char b; unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int a;
 
@@ -81,7 +81,7 @@ int main(int argc, char *argv[])
 			next[(index + digit) + 1] += (prod % 10);
 			if (next[(index + digit) + 1] > 9)
 			{
-				next[index + digit] += next[(index + digital) + 1] / 10;
+				next[index + digit] += next[(index + digit) + 1] / 10;
 				next[(index + digit) + 1] = next[(index + digit) + 1 % 10;
 			}
 			next[(index + digit) + 1] += c;
