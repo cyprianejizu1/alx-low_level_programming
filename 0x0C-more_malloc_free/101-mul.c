@@ -19,7 +19,7 @@ int _isNum(char *num)
 }
 
 /**
- * *_memset - copies a character to the first n characters of the string pointer
+ * *_memset - copies a character to the first n characters
  * @s: original string
  * @b: value to replace
  * @n: number of bytes
@@ -82,7 +82,7 @@ int main(int argc, char *argv[])
 			if (next[(index + digit) + 1] > 9)
 			{
 				next[index + digit] += next[(index + digit) + 1] / 10;
-				next[(index + digit) + 1] = next[(index + digit) + 1] % 10;
+
 			}
 			next[(index + digit) + 1] += c;
 		}
