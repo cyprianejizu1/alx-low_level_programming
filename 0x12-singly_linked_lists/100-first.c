@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /**
  * first - print a statement before the main
